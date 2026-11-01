@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dragon 9 — Sovereign App Portal</title>
+<meta name="description" content="The Dragon 9 / Fluid Motion TV sovereign app constellation: music suite, pop maker, broadcast studio, 3D storefronts and ebook experiences." />
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; background: #030712; color: #e2e8f0;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+  .aurora {
+    position: fixed; inset: 0; z-index: -1; pointer-events: none; overflow: hidden;
+  }
+  .aurora::before {
+    content: ""; position: absolute; inset: -60%;
+    background:
+      radial-gradient(640px 420px at 18% 25%, rgba(6,182,212,0.22), transparent 60%),
+      radial-gradient(760px 520px at 82% 18%, rgba(217,70,239,0.16), transparent 60%),
+      radial-gradient(820px 620px at 62% 88%, rgba(16,185,129,0.16), transparent 60%);
+    animation: drift 26s ease-in-out infinite alternate;
+  }
+  @keyframes drift {
+    0%   { transform: translate(-4%,-3%) rotate(0deg) scale(1); }
+    50%  { transform: translate(2%,3%) rotate(3deg) scale(1.1); }
+    100% { transform: translate(4%,-2%) rotate(-2deg) scale(1.05); }
+  }
+  header { text-align: center; padding: 4rem 1.5rem 2.5rem; }
+  .sigil { font-size: 3rem; }
+  h1 {
+    margin: 0.5rem 0 0.25rem; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800;
+    background: linear-gradient(90deg, #22d3ee, #a78bfa, #34d399);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    letter-spacing: 0.04em;
+  }
+  .tagline { color: #67e8f9; font-family: ui-monospace, monospace; font-size: 0.85rem; letter-spacing: 0.25em; text-transform: uppercase; }
+  .sub { color: #64748b; margin-top: 0.75rem; font-size: 0.95rem; }
+  .grid {
+    max-width: 1100px; margin: 0 auto; padding: 1rem 1.5rem 4rem;
+    display: grid; gap: 1.1rem;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: rgba(15, 23, 42, 0.72); border: 1px solid rgba(51, 65, 85, 0.8);
+    border-radius: 1.1rem; padding: 1.4rem 1.4rem 1.2rem;
+    transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
+    backdrop-filter: blur(6px);
+  }
+  a.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(34, 211, 238, 0.55);
+    box-shadow: 0 12px 40px -12px rgba(34, 211, 238, 0.35);
+  }
+  .emoji { font-size: 1.7rem; }
+  .card h2 { margin: 0.6rem 0 0.35rem; font-size: 1.08rem; font-weight: 700; color: #f1f5f9; }
+  .card p { margin: 0; font-size: 0.85rem; line-height: 1.5; color: #94a3b8; }
+  .badge {
+    display: inline-block; margin-top: 0.8rem; font-family: ui-monospace, monospace;
+    font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: #22d3ee; border: 1px solid rgba(34,211,238,0.35); border-radius: 999px;
+    padding: 0.2rem 0.65rem;
+  }
+  footer {
+    text-align: center; color: #475569; font-family: ui-monospace, monospace;
+    font-size: 0.75rem; padding: 2rem 1rem 3rem;
+  }
+  footer .pulse { color: #22d3ee; }
+</style>
+</head>
+<body>
+<div class="aurora"></div>
+<header>
+  <div class="sigil">🐉</div>
+  <h1>DRAGON 9 — SOVEREIGN APP PORTAL</h1>
+  <div class="tagline">Fluid Motion of the Future</div>
+  <div class="sub">Eight sovereign instruments, one constellation. 432 Hz locked.</div>
+</header>
+<main class="grid">
+
+  <a class="card" href="apps/production-suite/">
+    <div class="emoji">🎛️</div>
+    <h2>Sovereign Production Suite</h2>
+    <p>Lotus 35-petal piano, Bass Dragon Sub-808, Drum Monkey, vocal studio, shader stage &amp; MIDI export. Receives songs from Pop Maker.</p>
+    <span class="badge">Music</span>
+  </a>
+
+  <a class="card" href="apps/pop-maker/">
+    <div class="emoji">🎵</div>
+    <h2>Dragon 9 Pop Maker</h2>
+    <p>Pop song generator on the Dragon 9 time system. Sends songs straight into the Production Suite as playable patterns.</p>
+    <span class="badge">Music</span>
+  </a>
+
+  <a class="card" href="apps/broadcast-studio/">
+    <div class="emoji">📡</div>
+    <h2>Sovereign Broadcast Studio</h2>
+    <p>Super Puff live on air — comedic anchor, CYOA theater, mesh telemetry and the emergency reboot lever.</p>
+    <span class="badge">Studio</span>
+  </a>
+
+  <a class="card" href="apps/storefront/">
+    <div class="emoji">🛒</div>
+    <h2>Sovereign Media 3D Storefront</h2>
+    <p>Tunnel-aquarium WebGL storefront for the Guide to Sovereign Media ebook tiers — $9 / $27 / $54 with PayPal checkout.</p>
+    <span class="badge">Store</span>
+  </a>
+
+  <a class="card" href="apps/ebook/">
+    <div class="emoji">📖</div>
+    <h2>Fluid Motion 3D Spatial Ebook</h2>
+    <p>The flagship: interactive 3D theme-park gallery and sales experience for The Fluid Motion of the Future.</p>
+    <span class="badge">Ebook</span>
+  </a>
+
+  <a class="card" href="apps/gallery/">
+    <div class="emoji">🖼️</div>
+    <h2>3D Spatial Gallery</h2>
+    <p>Multi-room WebGL exhibits, reading lounge, sample chapters and the 3D book vault.</p>
+    <span class="badge">Ebook</span>
+  </a>
+
+  <a class="card" href="apps/new-world-ordered/">
+    <div class="emoji">📕</div>
+    <h2>New World Ordered Tome</h2>
+    <p>Interactive 3D hardcover tome with manuscript reader, redactions vault and SecretaryBot panel.</p>
+    <span class="badge">Ebook</span>
+  </a>
+
+  <a class="card" href="apps/coloring-book/">
+    <div class="emoji">🖍️</div>
+    <h2>Super Puff Coloring Book</h2>
+    <p>Printable 5-page coloring books, 3D book rooms, Grandparents Hub and parental guidance.</p>
+    <span class="badge">Family</span>
+  </a>
+
+</main>
+<footer>
+  <span class="pulse">●</span> DRAGON 9 SOVEREIGN MESH · fluidmotiontv.site · fluidmotiontv.tech · dragon9.online
+</footer>
+</body>
+</html>
